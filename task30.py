@@ -2,3 +2,10 @@
 # Формула для получения n-го члена прогрессии: an = a1 + (n-1) * d.
 # Каждое число вводится с новой строки.
 
+first_element = int(input('Задайте первый элемент прогрессии '))
+difference = int(input('Задайте шаг прогрессии '))
+volume = int(input('Задайте количество элементов прогрессии '))
+
+total = [(first_element + (i - 1) * difference) for i in range(1, volume + 1)]
+
+print(f'\nАрифметическая прогрессия: {total}')

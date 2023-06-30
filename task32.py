@@ -9,4 +9,4 @@ max_num = int(input('Задайте максимальную границу ди
 lst = [randint(1,10) for _ in range(n)]
 result = [i for i in range(len(lst)) if min_num <= lst[i] <= max_num]
 print(f'Список: {lst}\nИндексы элементов, принадлежащих диапазону от {min_num} до {max_num}:', end=' ')
-print(*result)
+print(*result, sep=', ')
